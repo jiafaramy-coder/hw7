@@ -11,14 +11,14 @@ Highcharts.chart('container', {
         panKey: 'shift'
     },
     title: {
-        text: 'Egg Yolk Composition'
+        text: '2024全球五大洲來台旅客人次分布圖'
     },
     tooltip: {
-        valueSuffix: '%'
+        valueSuffix: ''
     },
     subtitle: {
         text:
-        'Source:<a href="https://www.mdpi.com/2072-6643/11/3/684/htm" target="_default">MDPI</a>'
+        '資料來源:交通部觀光署" target="_default">MDPI</a>'
     },
     plotOptions: {
         pie: {
@@ -46,30 +46,34 @@ Highcharts.chart('container', {
     },
     series: [
         {
-            name: 'Percentage',
+            name: '人次',
             colorByPoint: true,
             data: [
                 {
-                    name: 'Water',
-                    y: 55.02
-                },
-                {
-                    name: 'Fat',
+                    name: '亞洲地區',
                     sliced: true,
                     selected: true,
-                    y: 26.71
+                    y: 6577539
                 },
                 {
-                    name: 'Carbohydrates',
-                    y: 1.09
+                    name: '非洲地區',
+                    y: 11540
                 },
                 {
-                    name: 'Protein',
-                    y: 15.5
+                    name: '美洲地區',
+                    y: 784855
                 },
                 {
-                    name: 'Ash',
-                    y: 1.68
+                    name: '大洋洲地區',
+                    y: 131720
+                },
+                {
+                    name: '歐洲地區',
+                    y: 349981
+                },
+                {
+                    name: '其他未列明',
+                    y: 2051
                 }
             ]
         }
